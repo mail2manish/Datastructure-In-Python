@@ -18,3 +18,27 @@ We can perform the two operations in the stack - **PUSH and POP**. The PUSH oper
 **Working of the stack**
 
 ![stack-operations-in-c](https://user-images.githubusercontent.com/56465441/141716224-2a678266-d94b-456f-93bc-00826e72c45e.gif)
+
+
+# 2.Queue
+Like stack, queue is a linear data structure that stores items in **First In First Out (FIFO)** manner. With a queue the least recently added item is removed first. A good example of queue is any queue of consumers for a resource where the consumer that came first is served first.
+
+![Queue](https://user-images.githubusercontent.com/56465441/142555886-051fd805-5053-4072-a187-73981884845f.png)
+
+**Working of the queue**
+
+**1. Enqueue:-**
+
+to the queue. If the queue is full, then it is said to be an Overflow condition – **Time Complexity : O(1)**
+
+Adds an item ![queue-insert-item](https://user-images.githubusercontent.com/56465441/142556823-cd26099d-103b-4249-a37c-53fe9605001b.gif)
+
+**2. Dequeue:-**
+
+Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition – **Time Complexity : O(1)**
+
+![dequeue](https://user-images.githubusercontent.com/56465441/142557033-c0a53cc1-52e4-47bc-aadd-680e0c3c5465.gif)
+
+**3. Front:-** Get the front item from queue – **Time Complexity : O(1)**
+
+**4. Rear:-** Get the last item from queue – **Time Complexity : O(1)**
