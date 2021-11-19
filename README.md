@@ -31,7 +31,7 @@ Like stack, queue is a linear data structure that stores items in **First In Fir
 
 to the queue. If the queue is full, then it is said to be an Overflow condition – **Time Complexity : O(1)**
 
-Adds an item ![queue-insert-item](https://user-images.githubusercontent.com/56465441/142556823-cd26099d-103b-4249-a37c-53fe9605001b.gif)
+![queue-insert-item](https://user-images.githubusercontent.com/56465441/142556823-cd26099d-103b-4249-a37c-53fe9605001b.gif)
 
 **2. Dequeue:-**
 
