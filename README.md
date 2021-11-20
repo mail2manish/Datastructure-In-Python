@@ -42,3 +42,38 @@ Removes an item from the queue. The items are popped in the same order in which 
 **3. Front:-** Get the front item from queue – **Time Complexity : O(1)**
 
 **4. Rear:-** Get the last item from queue – **Time Complexity : O(1)**
+
+
+# 3.Linked-List
+A linked list is a sequence of data elements, which are connected together via links. Each data element contains a connection to another data element in form of a pointer. **Python does not have linked lists in its standard library**. We implement the concept of linked lists using the concept of nodes.
+
+![singly_linked_list-operation-img1](https://user-images.githubusercontent.com/56465441/142711622-393d31ab-96a3-4a41-b1cd-8ebf7870f0ed.gif)
+
+**Creation of Linked list**
+We create a Node object and create another class to use this ode object. We pass the appropriate values through the node object to point the to the next data elements.
+
+**Traversing a Linked List**
+Singly linked lists can be traversed in only forward direction starting form the first data element. We simply print the value of the next data element by assigning the pointer of the next node to the current data element.
+
+**Inserting at the Beginning**
+This involves pointing the next pointer of the new data node to the current head of the linked list. So the current head of the linked list becomes the second data element and the new node becomes the head of the linked list.
+
+**Inserting at the End**
+This involves pointing the next pointer of the the current last node of the linked list to the new data node. So the current last node of the linked list becomes the second last data node and the new node becomes the last node of the linked list.
+
+**Inserting node at index pos**
+This involves changing the pointer of a specific node to point to the new node. That is possible by passing in both the new node and the existing node after which the new node will be inserted. So we define an additional class which will change the next pointer of the new node to the next pointer of middle node. Then assign the new node to next pointer of the middle node.
+
+**Deleting node at the index pos**
+To delete a middle node, we must have a pointer to the node previous to the node to be deleted. So if positions are not zero, we run a loop position-1 times and get a pointer to the previous node.
+
+**Deleting node at the front**
+Deleting the first node of the Linked List is very easy. If the head is not null then create a temp node pointing to head and move head to the next of head. Then delete the temp node.
+
+**Deleting node at the end**
+Various steps for deleting last node of singly linked list are as follows:
+
+**Step:1** Copy address of last node to some variable called delete.
+**Step:2** Move head to second node of linked list.
+**Step:3** Disconnect connection of second last node to last node.
+**Step:4** Free the memory occupied by last node.
